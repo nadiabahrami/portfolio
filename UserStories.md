@@ -11,5 +11,5 @@ Clear concise statements to guide the vision of the portfolio site.
 
 - As a Manager I would like to see the projects that have been worked on by the client to be easily accessible.
 - As a Manager I would like to see education to see background
-- As a Manager I would like  to see skills to assess compatibility compatibility quickly
+- As a Manager I would like  to see skills to assess compatibility quickly
 
