@@ -370,9 +370,9 @@
           			</div>
             		<div class="col-md-6 col-sm-6 col-xs-12 info centertext">
             			<p>Nadia Bahrami</p>
-                        <p>Seattle, Wa</p>
-                        <p>Tel No : 425-894-8753</p>
-                        <p>Email : <a href="mailto:nadia.bahrami@gmail.com?subject=Portfolio Contact">nadia.bahrami@gmail.com</a></p>
+                  <p>Seattle, Wa</p>
+                  <p>Tel No : 425-894-8753</p>
+                  <p>Email : <a href="mailto:nadia.bahrami@gmail.com?subject=Portfolio Contact">nadia.bahrami@gmail.com</a></p>
           			</div>
           		</div>
       		</div>        
@@ -419,14 +419,9 @@ $(function(){
             $('#banner').css({'height': (newH - 68)+'px'});
 			$('#bannertext').css({'height': (newH - 68)+'px'});
         }
-
     })          
 });
 
-
-	
-	
-	
 	$(function(){
   $('#galleryimg').mixItUp();
 });
@@ -451,88 +446,51 @@ $(function(){
       }
     });
 	
-	
 	 $('.quotes').quovolver({
       equalHeight   : true
     });
 	
-	
 	</script>
-<script>
+  <script>
+  	$(document).ready(function () {
 
-	$(document).ready(function () {
+  		$(document).on("scroll", onScroll);
 
-		$(document).on("scroll", onScroll);
+  		$('a[href^="#"]').on('click', function (e) {
+  			e.preventDefault();
+  			$(document).off("scroll");
+  			$('a').each(function () {
+  				$(this).removeClass('active');
+  			})
+  			$(this).addClass('active');
+  			var target = this.hash;
+  			$target = $(target);
 
- 
-
-		$('a[href^="#"]').on('click', function (e) {
-
-			e.preventDefault();
-
-			$(document).off("scroll");
-
- 
-
-			$('a').each(function () {
-
-				$(this).removeClass('active');
-
-			})
-
-			$(this).addClass('active');
-
- 
-
-			var target = this.hash;
-
-			$target = $(target);
-
-			$('html, body').stop().animate({
-
-				'scrollTop': $target.offset().top
-
-			}, 500, 'swing', function () {
-
-				window.location.hash = target;
-
-				$(document).on("scroll", onScroll);
-
-			});
-
-		});
-
-	});
+  			$('html, body').stop().animate({
+  				'scrollTop': $target.offset().top
+  			}, 500, 'swing', function () {
+  				window.location.hash = target;
+  				$(document).on("scroll", onScroll);
+  			});
+  		});
+  	});
 
  
-
-	function onScroll(event){
-
-		var scrollPosition = $(document).scrollTop();
-
-		$('.nav li a').each(function () {
-
-			var currentLink = $(this);
-
-			var refElement = $(currentLink.attr("href"));
-
-			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-
-				$('.nav li a').removeClass("active");
-
-				currentLink.addClass("active");
-
-			}
-
-			else{
-
-				currentLink.removeClass("active");
-
-			}
-
-		});
-
-	}
+    // shaded nav link bar
+  	function onScroll(event){
+  		var scrollPosition = $(document).scrollTop();
+  		$('.nav li a').each(function () {
+  			var currentLink = $(this);
+  			var refElement = $(currentLink.attr("href"));
+  			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+  				$('.nav li a').removeClass("active");
+  				currentLink.addClass("active");
+  			}
+  			else{
+  				currentLink.removeClass("active");
+  			}
+  		});
+  	}
 
 	</script>
 </body>
