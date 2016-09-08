@@ -10,11 +10,11 @@ This will be a site for my online portfolio to show a few of the projects that I
 
 - HTML5 layouts - Bootstrap Theme: [Sedulous](https://www.bootstrapzero.com/bootstrap-template/sedulous)
 
-- [Rocket Ship Icon](#) by
+- [Launch Icon](https://thenounproject.com/term/launch/601940/) by Delwar Hossain
 
-- [Graph Icon](#) by
+- [Line Graph Icon](https://thenounproject.com/term/line-graph/185486/) by icon 54
 
-- [Python Icon](#) by
+- [Python Icon](http://uxrepo.com/static/icon-sets/windows/svg/language-python.svg) by unknown
 
-- [Project Management Icon](#) by
+- [Project Planning Icon](https://thenounproject.com/term/project-planning/527965/) by ProSymbols
 
