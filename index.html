@@ -499,7 +499,8 @@ $(function(){
     jQuery(document).ready(function () {
       $(".project-summary").click(function(evt) {
         console.log("You made it here.");
-        var content = $( this ).parents().contents('figcaption');
+        // var content = $( this ).parents().contents('figcaption');
+        var content = $(this);
         console.log(content);
         $.colorbox({href: content,
          inline: true,
